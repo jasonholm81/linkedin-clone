@@ -1,6 +1,13 @@
 import React from "react";
 import "./Header.css";
 import SearchIcon from "@material-ui/icons/Search";
+import HomeIcon from "@material-ui/icons/Home";
+import HeaderOption from "./HeaderOption";
+import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";
+import BusinessCenterIcon from "@material-ui/icons/BusinessCenter";
+import ChatIcon from "@material-ui/icons/Chat";
+import NotificationsIcon from "@material-ui/icons/Notifications";
+import Avatar from "@material-ui/core/Avatar";
 
 function Header() {
   return (
@@ -17,7 +24,17 @@ function Header() {
         </div>
       </div>
 
-      <div className="header__right"></div>
+      <div className="header__right">
+        <HeaderOption Icon={HomeIcon} title="Home" />
+        <HeaderOption Icon={SupervisorAccountIcon} title="My Network" />
+        <HeaderOption Icon={BusinessCenterIcon} title="Jobs" />
+        <HeaderOption Icon={ChatIcon} title="Messaging" />
+        <HeaderOption Icon={NotificationsIcon} title="Notifications" />
+        <HeaderOption
+          avatar="https://media.licdn.com/dms/image/D4D35AQGlHQ69btgLfA/profile-framedphoto-shrink_200_200/0/1695065034510?e=1696014000&v=beta&t=sOtWZPZIYcftDBoY93jSQ11FcBoj9aNlBOhsbWvZ4to"
+          title="me"
+        />
+      </div>
     </div>
   );
 }
