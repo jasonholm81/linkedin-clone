@@ -22,9 +22,9 @@ const Post = forwardRef(({ name, description, message, photoUrl }, ref) => {
       </div>
       <div className="post__buttons">
         <InputOption Icon={ThumbUpAltOutlinedIcon} title="Like" color="gray" />
-        <InputOption Icon={ChatOutlinedIcon} title="Like" color="gray" />
-        <InputOption Icon={ShareOutlinedIcon} title="Like" color="gray" />
-        <InputOption Icon={SendOutlinedIcon} title="Like" color="gray" />
+        <InputOption Icon={ChatOutlinedIcon} title="Comment" color="gray" />
+        <InputOption Icon={ShareOutlinedIcon} title="Share" color="gray" />
+        <InputOption Icon={SendOutlinedIcon} title="Send" color="gray" />
       </div>
     </div>
   );
